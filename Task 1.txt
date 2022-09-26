@@ -1,0 +1,130 @@
+//Declare four variables without assigning values and print them in console
+
+var w,x,y,z;
+let a,b,c,d;
+
+console.log(`a is: ${a}, b is ${b}, c is ${c}, d is ${d}, 
+w is ${w}, x is ${x}, y is ${y}, z is ${z}`);
+
+
+//How to get value of the variable myvar as output
+
+var myvar= 1;
+console.log("myvar value is ", myvar);
+
+/*Declare variables to store your first name, 
+last name, marital status, country and age in multiple lines */
+
+var firstname;
+var lastname; 
+var maritalstatus;
+var country;
+let age;
+
+
+/*Declare variables to store your first name, 
+last name, marital status, country and age in a single line */
+
+var Firstname, Lastname, Maritalstatus,Country,Age;
+
+
+//Declare variables and assign string, boolean, undefined and null data types
+
+let var1 = "Sivaraj";
+let var2=true;
+let var3=undefined;
+let var4=null;
+
+console.log(`value ${var1} is ${typeof(var1)} datatype`);
+console.log(`value ${var2} is ${typeof(var2)} datatype`);
+console.log(`value ${var3} is ${typeof(var3)} datatype`);
+console.log(`value ${var4} is ${typeof(var4)} datatype`);
+
+
+//Convert the string to integer
+
+var xyz = "27";
+var a1 = parseInt(xyz);
+var a2 = Number(xyz);
+var a3 = + xyz;
+
+
+console.log(`xyz is ${xyz} and datatype is ${typeof(xyz)}`);
+console.log(`a1 is ${a1} and datatype is ${typeof(a1)}`);
+console.log(`a2 is ${a2} and datatype is ${typeof(a2)}`);
+console.log(`a3 is ${a3} and datatype is ${typeof(a3)}`);
+
+//Write 6 statement which provide truthy & falsey values.
+ // in Javasacript all the values have either truthy or falsy value by default
+/* The following values are always falsy:
+
+false
+0 (zero)
+-0 (minus zero)
+0n (BigInt zero)
+'', "", `` (empty string)
+null
+undefined
+NaN
+
+
+Everything else is truthy. That includes:
+
+'0' (a string containing a single zero)
+'false' (a string containing the text “false”)
+[] (an empty array)
+{} (an empty object)
+function(){} (an “empty” function)
+
+*/
+
+console.log(5<4);
+
+if(0){
+console.log("true value")
+}
+else{
+    console.log("false value")
+}
+
+
+if("false"){
+    console.log("true value")
+    }
+    else{
+        console.log("false value")
+    }
+    
+    if(undefined){
+        console.log("true value")
+        }
+        else{
+            console.log("false value")
+        }
+
+    if(NaN){
+            console.log("true value")
+            }
+            else{
+                console.log("false value")
+     }
+    if(null){
+                console.log("true value")
+                }
+                else{
+                    console.log("false value")
+    }
+
+     if(""){
+                console.log("true value")
+                }
+                else{
+                    console.log("false value")
+    }
+
+    if([]){
+        console.log("true value")
+        }
+        else{
+            console.log("false value")
+}

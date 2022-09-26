@@ -1,0 +1,23 @@
+//json obj compare
+
+
+var obj1={name:"Person1", age: 5};
+var obj2={age: 5,name:"Person1"};
+var obj1keys=Object.keys(obj1);
+var obj2keys=Object.keys(obj2);
+var matchcount =0;
+
+if(obj1keys.length === obj2keys.length){
+    for(let x of obj1keys){
+        if(obj1[x]=== obj2[x]){
+            matchcount ++;
+        }
+    }
+}
+
+if(matchcount===obj1keys.length){
+    console.log("Objects are Equal");
+}
+else{
+    console.log("Objects are not equal");
+}

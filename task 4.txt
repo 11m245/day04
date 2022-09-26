@@ -1,0 +1,84 @@
+const friendsInfo = [6, 12, "Mari", 1, true, "Munnabai", 200, "CaptianAmerica", 8, 10];
+let numOnlyArray =[];
+let sum=0
+
+for(let x of friendsInfo){
+    // console.log(typeof(x), typeof(typeof(x)));
+    if (typeof(x)==="number"){
+        numOnlyArray.push(x);
+        sum = sum +x
+    }
+}
+// console.log(numOnlyArray);
+console.log(`Average of the Numbers in the array is ${sum/numOnlyArray.length}`);
+
+// Print the contents of the input variable
+var input = [
+["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
+["0002", "Dika Sembiring", "Medan", "10/10/1992", "Bermain Gitar"],
+["0003","Winona", "Ambon", "25/12/1965", "Memasak"],
+["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
+]
+function dataHandling(input){
+for (var i = 0; i < input.length; i++) {
+//Your code goes here
+
+console.log(input[i]);
+}
+}
+dataHandling(input);
+
+//what is the output
+
+myobject = {1:"one","11":1,"name":"arun"}
+
+console.log(myobject.name);
+// console.log(myobject.11); /*Uncaught SyntaxError: missing ) after argument list*/
+
+console.log(myobject["1"]); //since kyname is not with alphabat character we have to use bracket notation in js 
+
+console.log(myobject["11"]);
+
+
+
+// Add a new key value pair to myobject
+// key : ten, value : ten
+
+
+myobject.ten = "ten";
+
+// console.log(`key is ten and value is ${myobject.ten}`);
+
+console.log(myobject);
+
+
+// Write out an object literal to represent the data below.
+// Guvi, Geek, 6, IIT-M RP,Chennai.
+
+
+obj11={companyFirstName : "Guvi",
+        companyLastName : "Geek",
+        Address1    :   6,
+        Address2    :   "IIT-M RP",
+        Address3    :   "Chennai."};
+
+console.log(obj11);
+
+/*
+How would you represent the following data using a combination of object literals and arrays?
+ (You can describe a strategy without typing or writing out the whole thing.)
+Guvi, Geek, 6, IIT-M RP,Chennai.
+Amazon, Inc, 31, SP Infocity, Chennai.
+Google, Alphabet, 34 Amphitheater Parkway, MountainView.
+Tesla, Inc , 32, 333 Santana Row,San Jose.
+
+using array of objects like , array1= [{},{},{},{}] each of the object containing 
+the corresponding values as key:value pair
+*/
+
+
+
+
+
+
+

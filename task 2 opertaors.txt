@@ -1,0 +1,286 @@
+/* Task 2: Simple Programs todo for Operators */
+
+/*Square of a number */
+
+
+let n=5;
+console.log(n*n);
+
+/* Swapping 2 numbers */
+
+
+x=25;
+
+y=35;
+
+temp=0;
+
+temp=y;
+
+y=x;
+x=temp;
+
+console.log("x is now", x, "y is now", y);
+
+
+
+/* Addition of 3 numbers */
+
+let aa=1,bb=2,cc=3;
+console.log("sum is", aa+bb+cc);
+
+
+
+/* Celsius to Fahrenheit conversion*/
+
+let celcius=25;
+
+let faren= ((celcius*9)/5)+32;
+
+console.log(`Faren of ${celcius}C is ${faren}F`);
+
+
+/* Meter to miles */
+
+let meters = 100;
+let miles = (meters/ 1609.344);
+console.log(`${meters} meters is ${miles.toFixed(2)} miles`);
+
+
+
+//Pounds to kg
+
+function poundstokg(x){
+
+    console.log(`${x} pounds is ${(x/2.2046)} Kgs`);
+}
+
+poundstokg(1000);
+
+
+
+/* Batting Average of a batsman*/
+
+let runs =180, innings=20, notout=2;
+
+let avg;
+
+avg= ((runs)/(innings-notout));
+
+console.log("Batting average is", avg);
+
+
+
+//Calculate five test scores and print their average
+
+
+let avg = average(100,200,300,400,500);
+
+function average(...r){
+
+    sum=0
+
+    for( let x of r){
+        sum+=x;
+    }
+
+    return sum / r.length;
+
+}
+
+console.log(`The Average Test Score is ${avg}`);
+
+
+/* power of any number*/
+
+function powerto(x,y){
+
+  return Math.pow(x,y);
+}
+
+
+let x1=powerto(5,2);
+
+console.log("power value is", x1);
+
+
+// Calculate Simple Interest
+
+function simpleInterest(p,t,r){
+  return (p*t*r)/100 ;
+}
+
+let si=simpleInterest(1000,10,3);
+
+console.log("simple Interest is", si);
+
+// Calculate area of an equilateral triangle
+
+let sidevalue = 10;
+
+function areaEqTri(a){
+    return (a*a* Math.sqrt(3))/4;
+}
+
+let area = areaEqTri(sidevalue);
+
+console.log(`area of Equalateral Tri Angle is ${area.toFixed(2)}`);
+
+
+//Area Of Isosceles Triangle
+
+let basevalue= 10, height = 25 ;
+
+function areaIsoTri(a,b){
+    return (a*b)/2;
+}
+
+let area = areaIsoTri(basevalue, height);
+
+console.log(`area of Equalateral Tri Angle is ${area.toFixed(2)}`);
+
+
+
+//Volume Of Sphere
+
+
+let radius = 25 ;
+
+function VolumeofSph(r){
+    return ((4/3)*Math.PI * Math.pow(r,3));
+}
+
+let volume = VolumeofSph(radius);
+
+console.log(`Volume Of Sphere is ${volume.toFixed(2)}`);
+
+
+
+//volume of a Triangular Prism
+
+
+
+let apothemlength =7, base = 10, height =30 ;
+
+function VolumeofPrism(a,b,h){
+    return ((1/2)*a*b*h);
+}
+
+let volume = VolumeofPrism(apothemlength, base, height);
+
+console.log(`volume of a Triangular Prism ${volume.toFixed(2)}`);
+
+
+
+// Area of Triangle
+
+let basevalue= 10, height = 25 ;
+
+function areaTri(h,b){
+    return (h*b)/2;
+}
+
+let area = areaTri( height, basevalue);
+
+console.log(`area of Tri Angle is ${area.toFixed(2)}`);
+
+
+
+//Calculate Discount Of Product
+let actualcost =100, soldcost = 80;
+
+let discount = disCal(actualcost,soldcost);
+
+function disCal(oprice, sprice){
+    return ((100/oprice)*(oprice-sprice));
+}
+
+
+console.log(`actual price is ${actualcost} and the Discount is ${discount}% and value of discount is ${(discount/100) * actualcost}`)
+
+
+//  radius given find  diameter, circumference and area
+
+
+let radius = 20;
+let diameter = dia(radius);
+let circumference=circum(radius);
+let area = areacirct(radius);
+
+function dia(r){
+    return 2*r;
+}
+
+function circum(r){
+    return 2*Math.PI *r;
+}
+
+function areacirct(r){
+    return Math.PI *r*r;
+}
+
+console.log(`Radius : ${radius}
+Diameter : ${diameter}
+Circumference : ${circumference}
+Area : ${area}`);
+
+
+// Given two numbers and perform all arithmetic operations.
+
+
+let x=7,y=2;
+
+
+console.log(` Addition Value of ${x}, ${y} is ${x+y}`);
+console.log(` Subtraction Value of ${x} by ${y} is ${x-y}`);
+console.log(` Multiplication Value of ${x}, ${y} is ${x*y}`);
+console.log(` Division Value of ${x} by ${y} is ${(x/y).toFixed(2)}`);
+
+
+
+//Display the asterisk pattern as shown below(No loop needed):
+
+console.log(`*****
+*****
+*****
+*****
+*****`);
+
+/* Calculate electricity bill?
+For example, a consumer consumes 100 watts per hour daily for one month.
+ Calculate the total energy bill of that consumer if per unit rate is 10? */
+
+
+let usagePerHourWattage = 100
+ let monthlyconsumedUnitsKWH = (usagePerHourWattage * 24 *30 )/1000;
+ let billAmount = monthlyconsumedUnitsKWH * 10;
+
+ console.log(`Bill Amount is Rs.${billAmount}`);
+
+
+// Program To Calculate CGPA
+
+let grades = [8,7,6,5,8];
+let sum =0;
+
+for (let x of grades){
+sum+=x;
+}
+
+let cgpa=(sum / grades.length).toFixed(2);
+
+console.log(` CGPA is ${cgpa}, and Percetage is ${(cgpa*9.5).toFixed(2)}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
